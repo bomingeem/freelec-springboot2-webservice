@@ -41,6 +41,6 @@ public class HelloControllerTest {
                 .param("amount", String.valueOf(amount)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is(name)))
-                .andExpect(jsonPath("$.amount", is(amount)));
+                .andExpect(jsonPath("$.a mount", is(amount)));
     }
 }
