@@ -11,17 +11,13 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
-
+//자바와 스프링 부트를 사용하기 위한 필수 플러그인
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+//io.spring.dependency-management 플러그인은 스프링 부트의 의존성들을 관리해주는 플러그인
 apply plugin: 'io.spring.dependency-management'
 
-repositories {
-    mavenCentral()
-    //라이브러리 업로드 난이도 때문에 jcenter도 많이 사용
-    jcenter()
-}
 
 group 'com.bomin'
 version '1.0-SNAPSHOT'
@@ -29,6 +25,8 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    //라이브러리 업로드 난이도 때문에 jcenter도 많이 사용
+    jcenter()
 }
 
 dependencies {
