@@ -25,4 +25,8 @@ Connection type : ssh 선택
 2. 타임존 변경 : 기본 서버시간이 미국 시간대이기 떄문에 한국 시간대로 변경
 3. 호스트네임 변경 : 현재 접속한 서버의 별명을 등록, IP만으로는 어떤 서버가 어떤 역할을 하는지 알 수 없기 때문
 
+AWS에서는 관리형 서비스인 RDS(Relational Database Service)를 제공한다
+MariaDB : 동일 하드웨어 사양으로 MySQL보다 향상된 성능
+ 
+
 
