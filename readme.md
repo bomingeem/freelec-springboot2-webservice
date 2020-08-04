@@ -27,6 +27,18 @@ Connection type : ssh 선택
 
 AWS에서는 관리형 서비스인 RDS(Relational Database Service)를 제공한다
 MariaDB : 동일 하드웨어 사양으로 MySQL보다 향상된 성능
+
+git clone : 프로젝트 히스토리를 전부 다 받아온다 (git clone <url> 명령으로 저장소를 가져옴)
+현재 EC2엔 Gradle을 설치하지 않았으나 Gradle Task를 수행할 수 있다. 이는 프로젝트 내부에 포함된 gradlew 파일 때문이다
+그레이들이 설치되지 않은 환경 혹은 버전이 다른 상황에서도 해당 프로젝트에 한해서 그레이들을 쓸 수 있도록 지원하는 Wrapper 파일이다
+
+배포 : 작성한 코드를 실제 서버에 반영하는 것
+ 1. get clone 혹은 git pull을 통해 새 버전의 프로젝트 받음
+ 2. Gradle이나 Maven을 통해 프로젝트 테스트와 빌드
+ 3. EC2 서버에서 해당 프로젝트 실행 및 재실행
  
+ 1) REPOSITORY=/home/ec2-user/app/step1
+  - 프로젝트 디렉토리 주소는 스크립트 내에서 자주 사용하는 값이기 때문에 변수로 저장
+
 
 
