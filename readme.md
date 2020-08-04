@@ -37,8 +37,8 @@ git clone : 프로젝트 히스토리를 전부 다 받아온다 (git clone <url
  2. Gradle이나 Maven을 통해 프로젝트 테스트와 빌드
  3. EC2 서버에서 해당 프로젝트 실행 및 재실행
  
- 1) REPOSITORY=/home/ec2-user/app/step1
-  - 프로젝트 디렉토리 주소는 스크립트 내에서 자주 사용하는 값이기 때문에 변수로 저장
+ classpath가 붙으면 jar 안에 있는 resources 디렉토리를 기준으로 경로가 생성됨
+ application-oauth.properties는 절대경로를 사용함, 외부에 파일이 있기 때문
 
 
 
